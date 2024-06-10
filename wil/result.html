@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matriz</title>
+</head>
+<body>
+    <h1>Matriz desde CSV</h1>
+    <table border="1">
+        {% for fila in matriz._Matriz__datos %}
+        <tr>
+            {% for valor in fila %}
+            <td>{{ valor }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
